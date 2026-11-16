@@ -1,0 +1,53 @@
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+body {
+  background: #f3f4f6;
+}
+
+/* ─── Game tile ──────────────────────────────────────────────────────────── */
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: default;
+  transition: all 0.15s ease;
+  aspect-ratio: 1;
+}
+
+.tile-black {
+  background: #111;
+}
+
+/* ─── Keyboard key badges ────────────────────────────────────────────────── */
+.kbd-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #374151;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Win overlay ────────────────────────────────────────────────────────── */
+#win-banner {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+}
+
+#win-banner.show {
+  display: flex;
+}
+
